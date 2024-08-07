@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta property="og:description" content="null" />
+    <meta name="description" content="null" />
+    <meta name="next-head-count" content="12" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:300,400"
+      rel="stylesheet"
+    />
+  
+    <title>Shevchenkova Hata</title>
+  </head>
+  <body>
+      <div class="header">
+        <nav>
+          <div>
+            <button class="my-button" id="my-button">
+              <i class="fas fa-bars info"></i>
+              <img src="img/logo.png" alt="logo" class="logo" />
+            </button>
+            <ul id="mynav">
+              <img src="img/logo.png" alt="logo" height="70px" width="70px" />
+
+              <li>
+                <a
+                  class="justify-between t-dec-none p-20 f-size-20"
+                  style="color: #12100c"
+                  href="#wrapper"
+                  draggable="false"
+                  >Перші страви</a
+                >
+              </li>
+              <li>
+                <a
+                  class="justify-between t-dec-none p-20 f-size-20"
+                  style="color: #12100c"
+                  href="#wrapper1"
+                  draggable="false"
+                  >Гарніри</a
+                >
+              </li>
+              <li>
+                <a
+                  class="justify-between t-dec-none p-20 f-size-20"
+                  style="color: #12100c"
+                  href="#wrapper2"
+                  draggable="false"
+                  >Основні</a
+                >
+              </li>
+              <li>
+                <a
+                  class="justify-between t-dec-none p-20 f-size-20"
+                  style="color: #12100c"
+                  href="#wrapper3"
+                  draggable="false"
+                  >Салати</a
+                >
+              </li>
+              <li>
+                <a
+                  class="justify-between t-dec-none p-20 f-size-20"
+                  style="color: #12100c"
+                  href="#wrapper4"
+                  draggable="false"
+                  >Напої</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div>
+        <img src="img/Fon.jpg" class="background" />
+      </div>
+    <div class="app">
+      <div class="closewindow">
+        <span>x</span>
+      </div>
+      <h2>Корзина</h2>
+   
+      <div class="content__fullprice">
+        <span>До сплати:</span>
+        <span class="fullprice">0 UA</span>
+      </div>
+      <div class="app-body">
+        <ul class="list">
+          
+        </ul>
+      </div>
+      <div class="openpopup">Оформити замовлення</div>
+      <div class="openpopup2">Очистити корзину</div>
+    </div>
+    <div class="b-popup" id="popup1">
+      <div id="contactform">
+        <div class="closepopup">
+              x
+        </div>
+        <h2 class="usertitle">Заповніть замовлення</h2>
+          
+          <form class="form" id="form" novalidate>
+            <div class="form-control">
+              <input id="inputname" type="text" placeholder="Ім'я" >
+              <small></small>
+            </div>
+            <div class="form-control">
+              <input id="inputemail" type="text" placeholder="Email">
+              <small></small>
+            </div>
+            <div class="form-control">
+              <input id="inputtel"  type="text" placeholder="Телефон" >
+              <small></small>
+            </div>
+            
+            <button class="openpopup3" type="submit">Відправити замовлення</button>
+          </form>
+      </div>
+   </div>
+    <section class="about">
+      <div class="about__inner">
+        <div class="about__info">
+          <h2>Про нас</h2>
+          <p>
+            Шевченкова Хата - це українська кухня, яка відома своєю смачною їжею
+            та дружньою атмосферою. Ми пропонуємо вам смачні страви, які ви
+            зможете замовити у нас або взяти з собою.
+          </p>
+        </div>
+        <div class="container">
+          <div class="container-weather">
+            <div class="weather">
+              <select id="city" class="text-center">
+                <option value="706483">Харків</option>
+                <option value="703448">Київ</option>
+                <option value="707471">Івано-Франківськ</option>
+                <option value="712926">Балаклія</option>
+              <select>
+              <p class="temperature">10&deg;</p>
+              <hr />
+              <div class="weatherIco"></div>
+              <p class="disclaimer text-center">Clouds</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="menu">
+      <hr style="border: 1px solid rgb(190, 190, 235)" />
+      <div class="dishes" id="wrapper">
+        <span class="button">Перші страви</span>
+      </div>
+      <div class="wrapper">
+        <div class="cart">
+          <img src="img/Borsh.webp" alt="" class="img"/>
+          <span class="called">Борщ український</span>
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span
+                  >Традиційний український борщ з м’ясом телятини та сметаною.
+                  410г</span
+                >
+                <span class="price"> 50 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+          <img src="img/okroshka.jpg" alt="" class="img"/>
+          <span class="called">Окрошка з куркою</span>
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span
+                  >Класична окрошка на насиченому курячому бульйоні з курячою
+                  грудкою. 350г</span
+                >
+                <span class="price"> 70 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+          <img src="img/solianka.webp" alt="" class="img"/>
+          <span class="called">Солянка</span>
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span
+                  >Збірна м'ясна солянка. Подається з сметаною, лимоном,
+                  маслинами, гірчицею та хлібом. 350г</span
+                >
+                <span class="price"> 90 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart">
+          <img src="img/bylion is chiken.webp" alt="" class="img"/>
+          <span class="called">Бульен з куркою</span>
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span
+                  >Бульйон з відвареною куркою, локшиною, перепелиним яйцем і
+                  зеленню. 350г</span
+                >
+                <span class="price"> 90 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="border: 1px solid rgb(190, 190, 235)" />
+      <div class="dishes" id="wrapper1">
+        <span class="button">Гарніри</span>
+      </div>
+      <div class="wrapper">
+        <div class="cart">
+          <img src="img/gril.jpg" alt="" class="img"/>
+          <span class="called">Овочі гриль</span>
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span
+                  >Кабачок, баклажан, болгарський перець, печериці, кукурудза,
+                  орегано. 300 г</span
+                >
+                <span class="price"> 150 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart">
+          <img src="img/poselian.jpeg" alt="" class="img"/>
+          <span class="called">Кортопля по селянськи</span>
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span>Картопля по селянськи 190г</span>
+                <span class="price"> 70 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart">
+          <img src="img/pure.jpeg" alt="" class="img"/>
+          <span class="called">Картопляне пюре</span>
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span>Картопляне пюре 170г</span>
+                <span class="price"> 50 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+          <img src="img/Fri.webp" alt="" class="img"/>
+          <span class="called">Картопляне фрі</span>
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span>Картопляне фрі 135г</span>
+                <span class="price"> 50 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="border: 1px solid rgb(190, 190, 235)" />
+      <div class="dishes" id="wrapper2">
+        <span class="button">Основні</span>
+      </div>
+      <div class="wrapper">
+        <div class="cart">
+          <img src="img/rulka.jpeg" alt="" class="img"/>
+          <span class="called">Соковита рулька</span>
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span
+                  >Соковита рулька з тушкованою капустою та картоплею.
+                  1300г</span
+                >
+                <span class="price"> 850 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart">
+          <img src="img/losos.webp" alt="" class="img"/>
+          <span class="called">Лосось на грилі</span>
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span
+                  >Лосось смажений на вугіллі з шпінатним пюре, подається з
+                  міксом зелені та лимоном 300г</span
+                >
+                <span class="price"> 450 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart">
+          <img src="img/grudka chiken.jpeg" alt="" class="img"/>
+          <span class="called">Куряча грудка на грилі</span>
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span
+                  >Курінна грудка, обсмажена на грилі з вершково-пармезаний
+                  соусом 370г</span
+                >
+                <span class="price"> 250 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+          <img src="img/vurizka.jpg" alt="" class="img"/>
+          <span class="called">Свинна вирізка в беконі</span>
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span
+                  >Свинна вирізка, бекон, гірчиця американська, сирний соус 400
+                  г</span
+                >
+                <span class="price"> 400 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="border: 1px solid rgb(190, 190, 235)" />
+      <div class="dishes" id="wrapper3">
+        <span class="button">Салати</span>
+      </div>
+      <div class="wrapper">
+        <div class="cart">
+          <img src="img/grecheskiu.jpg" alt="" class="img"/>
+          <span class="called">Салат Грецький</span>
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span
+                  >Салат зі свіжими овочами, оливками, хрустким салатом, сиром
+                  фета. 235г</span
+                >
+                <span class="price"> 190 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart">
+          <img src="img/cezar.jpg" alt="" class="img"/>
+          <span class="called">Салат Цезар</span>
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span
+                  >Мікс салату, бекон, пармезан, перепелині яйця, помідори чері,
+                  соус, крутони та обсмажена куряча грудка.</span
+                >
+                <span class="price"> 150 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart">
+          <img src="img/salat.webp" alt="" class="img"/>
+          <span class="called">Салат овочевий</span>
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span
+                  >Огірок, помідор, перець Болгарський, Мікс салату, лук Марс.
+                  Заправляється оливкою олією з соєвим соусом та спеціями
+                  270г</span
+                >
+                <span class="price"> 120 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+          <img src="img/olivie.jpg" alt="" class="img"/>
+          <span class="called">Олів'є з язиком</span>
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span
+                  >Язик телячий, морква, картопля, огірок, зелений горошок, яйця
+                  перепелині, пюре з зеленого горошку. 300 г</span
+                >
+                <span class="price"> 170 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="border: 1px solid rgb(190, 190, 235)" />
+      <div class="dishes" id="wrapper4">
+        <span class="button">Напої</span>
+      </div>
+      <div class="wrapper">
+        <div class="cart">
+          <img src="img/mahito ba.webp" alt="" class="img"/>
+          <span class="called">Мохіто б/а</span>
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span
+                  >Лайм, мʼята, цукровий сироп, фреш лимону, вода "Криштальне
+                  джерело"</span
+                >
+                <span class="price"> 90 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+          <img src="img/iagidnuy.jpeg" alt="" class="img"/>
+          <span class="called">Полуниця-Грейпфрут Лимонад</span>
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span>Полуниця-Грейпфрут Лимонад</span>
+                <span class="price"> 80 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+          <img src="img/espresso.webp" alt="" class="img"/>
+          <span class="called">Кава Espresso</span>
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span></span>
+                <span class="price"> 40 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+          <img src="img/Americano.jpeg" alt="" class="img"/>
+          <span class="called">Кава Americano</span>
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span></span>
+                <span class="price"> 45 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+            <img src="img/Cappuccino.jpeg" alt="" class="img"/>
+            <span class="called">Кава Cappuccino</span>          
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span></span>
+                <span class="price">55 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+          <img src="img/tea.jpeg" alt="" class="img"/>
+          <span class="called">Ягідний чай</span>
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span></span>
+                <span class="price"> 50 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+          <img src="img/tea grey.jpeg" alt="" class="img"/>
+          <span class="called">Чай Граф Грей</span>
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span></span>
+                <span class="price"> 50 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+          <img src="img/tea grey.jpeg" alt="" class="img"/>
+          <span class="called">Чай Зелений з жасміном</span>
+          <div class="content">
+            <div class="row">
+              <div class="details">
+                <span></span>
+                <span class="price"> 60 UA </span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="product_btn btn" >ХОЧУ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="about__info">
+        <img
+          src="img/photo_5237911285935497442_y.jpg"
+          alt="about"
+          width="50%"
+        />
+      </div>
+
+      <div id="tray">
+        <div class="count" id="cart_content"></div>
+        <i class="fa fa-shopping-basket fa-2x" aria-hidden="true"></i>
+      </div>
+
+      <div class="social">
+        <a href="#" target="_blank" class="icon telegram">
+          <div class="tooltip">Telegram</div>
+          <i class="fab fa-telegram-plane"></i>
+        </a>
+
+        <a href="#" target="_blank" class="icon instagram">
+          <div class="tooltip">Instagram</div>
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="form.js"></script>
+  </body>
+</html>
